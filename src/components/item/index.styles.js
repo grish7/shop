@@ -22,10 +22,8 @@ h2{
 }
 `
 export const WrapImage =styled.div`
-/* height:250px; */
   max-width: 100%;
   max-height: 100%;
-/* width: 100%; */
 overflow: hidden;
 border-radius: 10px;
 `

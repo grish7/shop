@@ -1,7 +1,6 @@
 import React from "react";
 import { MainWrapper,ImageWrapper,TitleWrapper,PriceWrapper,NumberWrapper } from "./index.styles";
 import { Image } from "../image";
-import { Button } from "../button";
 import { MdDeleteForever } from "react-icons/md";
 
 

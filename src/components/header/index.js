@@ -1,10 +1,8 @@
-import React, { useState,useEffect} from 'react'
+import React, { useState,useEffect,useCallback} from 'react'
 import { WrapBanner,WrapLogo,Logo,MainWrapper,WrapIcon,ImageStyle,WrapList,Element,Block } from './index.styles'
 import { FaShoppingCart } from "react-icons/fa";
 import { Basket } from '../basket';
 import { useSelector } from 'react-redux';
-import bannerImage from '../../assets/image/5.jpg';
-import { Image } from '../image';
 
 
 
@@ -12,14 +10,15 @@ export const Header=()=> {
   let [cartOpen,setCartOpen]= useState(false);
   const basketItems = useSelector(state => state.basket.items)
   const total =useSelector(state=>state.basket.totalItems)
-  const handleCart =()=>{
-    setCartOpen(cartOpen = !cartOpen)
-  }
+
+  const handleCart = useCallback(()=>{
+    setCartOpen(prev => !prev)
+  },[])
 
 
   useEffect (()=>{
           if(cartOpen && basketItems.length===0){
-              setTimeout(()=>handleCart(),3000)
+            setTimeout(()=>setCartOpen(false),3000)
           }
       },[cartOpen,basketItems.length])
 
@@ -46,7 +45,6 @@ export const Header=()=> {
               </Block>
             )}                 
         <WrapBanner>
-          {/* <Image img={bannerImage}/> */}
             <ImageStyle></ImageStyle>
         </WrapBanner>
     </MainWrapper>

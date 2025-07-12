@@ -22,7 +22,7 @@ export const ItemList =() =>{
     const dispatch =useDispatch();
 
     const handleClickAdd =(e,i)=>{
-         e.stopPropagation();  // Останавливаем всплытие события
+         e.stopPropagation();  
         dispatch(addItem(i));
     }
     const chosenItem =(i)=>{

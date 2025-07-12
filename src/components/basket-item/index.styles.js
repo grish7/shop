@@ -6,8 +6,6 @@ width:100%;
 height:50px;
 display: flex;
 justify-content: space-between;
-/* margin: 0 5px; */
-/* color: white; */
 border-bottom:5px solid rgb(207, 202, 202) ;
 font-size: 20px;
 font-weight:600;

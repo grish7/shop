@@ -35,8 +35,6 @@ text-align:center;
 color:#ff5722; 
 font-weight: 500;
 font-size: 20px;
-/* text-decoration: underline;
-text-decoration-skip-ink:auto ; */
 width: inherit;
 margin: 20px auto ;
 `

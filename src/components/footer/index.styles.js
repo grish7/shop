@@ -11,11 +11,3 @@ text-align: center;
 border-radius: 10px;
 `
 
-// export const WrapLogo = styled.div`
-// `
-
-// export const Logo = styled.span`
-// `
-
-// export const WrapBanner = styled.div`
-// `

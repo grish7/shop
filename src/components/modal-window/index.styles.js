@@ -7,7 +7,6 @@ position: absolute;
 width: 500px;
 top: 0px;
 height:100px ;
-/* margin: auto; */
 font-size:20px;
 font-weight:500;
 display: flex;
